@@ -13,7 +13,7 @@ SECRET_KEY = 'django-insecure-)lp+nw87walnqd^p-fc9b7=ls8)y$)vgi7_=lbbj9yjnjhejd8
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost:8000','tksafaris.pythonanywhere.com']
 
 # Application definition
 INSTALLED_APPS = [
@@ -88,7 +88,8 @@ USE_TZ = True
 
 # **Static Files Configuration**
 STATIC_URL = "/static/"
-STATICFILES_DIRS = [os.path.join(BASE_DIR, "api", "static")]
+STATICFILES_DIRS = [os.path.join(BASE_DIR, "api", "static", "api")]
+
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")  # Required for collectstatic
 
 # **Media Files Configuration**

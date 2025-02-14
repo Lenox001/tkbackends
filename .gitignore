@@ -1,46 +1,33 @@
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-*$py.class
-
 # Virtual environment
+venv/
 .venv/
 env/
-venv/
+*.pyc
+__pycache__/
 
-# Django-specific
-db.sqlite3
-db.sqlite3-journal
+# Django static and media files
+api/static/api/
 media/
-*.log
-
-# Migrations
-**/migrations/*.pyc
-**/migrations/*.pyo
-**/migrations/__pycache__/
-**/migrations/*.py, !**/migrations/__init__.py  # Keep __init__.py
-
-# Static files (collected)
 staticfiles/
-static/
 
-# IDE / Editor / OS
+# Database
+db.sqlite3
+*.sqlite3
+
+# Environment variables
+.env
+*.env
+
+# VS Code and OS files
 .vscode/
-.idea/
-*.swp
-*.swo
 .DS_Store
 Thumbs.db
 
-# Environment variables / Secrets
-.env
-*.env
-config/settings_local.py
+# Python Bytecode
+*.pyc
+*.pyo
+*.pyd
 
-# Python package files
-*.egg
-*.egg-info/
-dist/
-build/
-pip-log.txt
-pip-delete-this-directory.txt
+# Logs and temporary files
+logs/
+*.log
