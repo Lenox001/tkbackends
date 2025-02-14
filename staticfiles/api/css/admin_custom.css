@@ -1,0 +1,30 @@
+/* Custom Django Admin Styles */
+body {
+    background-color: black;
+    color: #00ff00;
+    font-family: "Courier New", monospace;
+}
+
+/* Admin Headers */
+h1, h2, h3 {
+    text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00;
+    animation: flicker 2s infinite alternate;
+}
+
+@keyframes flicker {
+    0% { opacity: 1; }
+    50% { opacity: 0.8; }
+    100% { opacity: 1; }
+}
+
+/* Buttons */
+input[type="submit"], .button {
+    background: #005500;
+    color: #00ff00;
+    border: 1px solid #00ff00;
+    transition: transform 0.2s ease-in-out;
+}
+
+input[type="submit"]:hover, .button:hover {
+    transform: scale(1.1);
+}

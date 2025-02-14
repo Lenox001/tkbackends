@@ -5,10 +5,6 @@ env/
 *.pyc
 __pycache__/
 
-# Django static and media files
-api/static/api/
-media/
-staticfiles/
 
 # Database
 db.sqlite3
