@@ -1,0 +1,15 @@
+{% extends "admin/base.html" %} {% load static %}
+
+<link
+  rel="icon"
+  href="{% static 'api/images/favicon.ico' %}"
+  type="image/x-icon"
+/>
+<link
+  rel="shortcut icon"
+  href="{% static 'api/images/favicon.ico' %}"
+  type="image/x-icon"
+/>
+
+{% block title %}{{ title }} | {{ site_title|default:_('Django Admin') }}{%
+endblock %}
